@@ -1,0 +1,11 @@
+component,status,notes
+pairing keys / analysis units,CONTROLLED_AFTER_EX1,collapsed duplicates; not originally clean
+problem text/format,YES,shared eval problems
+profile assignment,NO_NOT_IDENTICAL,cross-condition mismatches found — see EX.8
+simulator checkpoint,INTENDED_YES,verify single checkpoint path
+tutor system prompt (main4),YES,full Socratic
+max turns / stopping protocol,YES_POLICY,max_turns=10
+evaluator prompts/models,YES_POLICY,SLR prompt text corrected EX.6
+metric code/aggregation,YES_AFTER_EX6_LOCK,locked weights/direction
+base model family,NO,C4 Qwen API intentional
+name cleanup,REQUIRED,remove PE-GPT4o leftovers; C4=qwen3-max only

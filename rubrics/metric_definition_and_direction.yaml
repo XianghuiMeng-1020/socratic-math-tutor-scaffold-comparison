@@ -1,0 +1,55 @@
+QQ:
+  construct: Question Quality
+  unit: dialogue (aggregated tutor questioning)
+  raw_scale: 1-5
+  normalized_direction: higher_better
+  higher_means: better Socratic question quality
+  prompt: configs/prompts/judge_qq.txt
+  missing_rule: none special
+  weight: 0.2
+SD:
+  construct: Scaffolding Depth
+  unit: dialogue
+  raw_scale: 1-5
+  normalized_direction: higher_better
+  higher_means: deeper adaptive scaffolding
+  prompt: configs/prompts/judge_sd.txt
+  missing_rule: none special
+  weight: 0.2
+SLR:
+  construct: Solution Leaking Rate (safety / no-leak score after transform)
+  unit: dialogue
+  raw_scale: implementation returns 1-5 where 5=no leaking, 1=heavy leaking (see src/evaluation/metric_slr.py)
+  normalized_direction: higher_better_in_composite
+  higher_means: LESS solution leaking (safer tutor)
+  prompt_correct: configs/prompts/judge_slr.txt (CORRECTED to Solution Leaking Rate)
+  prompt_bug_found: Previous judge_slr.txt incorrectly said Student Learning Response; code metric_slr.py already implemented leaking
+  missing_rule: ambiguous turns may call LLM judge; rule-based otherwise
+  weight: 0.25
+EDT:
+  construct: Error Diagnosis Targeting
+  unit: dialogue
+  raw_scale: 1-5
+  normalized_direction: higher_better
+  higher_means: better targeting of student errors
+  prompt: configs/prompts/judge_edt.txt
+  missing_rule: none special
+  weight: 0.15
+DC:
+  construct: Dialogue Coherence
+  unit: dialogue
+  raw_scale: 1-5
+  normalized_direction: higher_better
+  higher_means: more coherent multi-turn dialogue
+  prompt: configs/prompts/judge_dc.txt
+  missing_rule: none special
+  weight: 0.1
+MC_Verified:
+  construct: Mathematical Correctness Verification
+  unit: dialogue
+  raw_scale: 0/0.5/1
+  normalized_direction: higher_better_when_verifiable
+  higher_means: 1=verified match, 0=mismatch, 0.5=NOT VERIFIABLE default (NOT partial credit)
+  prompt: rule/symbolic in metric_mc_verified.py
+  missing_rule: non-identifiable -> 0.5 default; must be disclosed
+  weight: 0.1

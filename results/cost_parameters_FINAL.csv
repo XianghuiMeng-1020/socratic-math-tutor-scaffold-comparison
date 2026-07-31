@@ -1,0 +1,9 @@
+parameter,value,status,evidence,date
+C2_training_usd,45.0,scenario_estimate,rq2_cost_tradeoff.py / local RTX LoRA SFT estimate,2026-02
+C3_training_usd_FINAL,55.0,LOCKED_scenario_estimate,code constant = SFT45 + DPO~10; manuscript $100 REJECTED unless GPU logs support it,2026-07-31
+C3_training_usd_manuscript_rejected,100.0,rejected_conflict,no itemised log in delivery supporting 100,audit
+C4_api_usd_per_dialogue,0.045,scenario_assumption,~2.8k tokens/dialogue × ~$0.016/1k DashScope qwen3-max; token logs incomplete,2026-02
+local_marginal_inference_usd,0.0,simplified_marginal_exclusion,excludes hardware/electricity/hosting/labour/simulator/evaluator,2026-07-31
+break_even_C2_vs_API,1000,derived,45/0.045,2026-07-31
+break_even_C3_vs_API,1222,derived,55/0.045 (NOT 2222),2026-07-31
+api_model,qwen3-max,locked,configs/models.yaml,2026-02

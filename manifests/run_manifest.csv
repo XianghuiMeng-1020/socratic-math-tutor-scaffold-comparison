@@ -1,0 +1,5 @@
+condition,source_file,exists,sha256_16
+C1_PE_Llama,E:\ICCE\xian math\xian math\outputs\dialogues\dialogues_C1_PE_Llama.jsonl,True,66a175c74d5300dd
+C2_SFT_Llama,E:\ICCE\xian math\xian math\outputs\dialogues\dialogues_C2_SFT_Llama.jsonl,True,c868cce53cc1454f
+C3_DPO_Llama,E:\ICCE\xian math\xian math\outputs\dialogues\dialogues_C3_DPO_Llama.jsonl,True,ce33a7b2123bec37
+C4_PE_Qwen,E:\ICCE\xian math\xian math\outputs\dialogues\dialogues_C4_PE_Qwen.jsonl,True,72122264ad9808cd

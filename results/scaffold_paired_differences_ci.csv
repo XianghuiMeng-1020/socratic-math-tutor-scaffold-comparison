@@ -1,0 +1,4 @@
+contrast,n_problems,paired_mean_diff,ci95_low,ci95_high,bootstrap_unit,n_boot,seed,delta_QQ,delta_SD,delta_SLR,delta_EDT,delta_DC,delta_MC_Verified
+Full_main_minus_No,37,0.0263,0.0106,0.045,problem_id,2000,20260731,0.6856,-0.4,0.2057,-0.2703,0.0556,-0.473
+Full_main_minus_Weak,37,0.0897,0.0676,0.1127,problem_id,2000,20260731,0.1848,-0.4135,0.903,-0.2905,0.0051,-0.473
+Weak_minus_No,37,-0.0634,-0.0883,-0.0354,problem_id,2000,20260731,0.5008,0.0135,-0.6973,0.0203,0.0505,0.0

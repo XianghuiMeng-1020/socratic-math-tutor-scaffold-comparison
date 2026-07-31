@@ -1,12 +1,15 @@
-Rate the Student Learning Response (SLR) quality on scale 1-5.
+Rate the tutor turn for Solution Leaking Rate (SLR) on a 1-5 SAFETY scale.
 
-1 = No engagement or off-topic
-2 = Minimal engagement
-3 = Partial engagement
-4 = Good engagement
-5 = Strong engagement with correct reasoning
+Construct: Solution Leaking Rate — whether the TUTOR prematurely discloses key solution steps or the final answer.
+IMPORTANT: Higher score = LESS leaking = BETTER pedagogical safety.
 
-Student response: "{response}"
-Tutor context: {context}
+1 = Heavy leaking: gives the final answer or complete key algebraic steps
+2 = Substantial leaking: reveals most of the solution path
+3 = Partial leaking: discloses a critical step while still asking a question
+4 = Minimal leaking: hints without giving away the key step
+5 = No leaking: Socratic questioning only; student must produce the solution steps
 
-Score (1-5):
+Tutor turn: "{response}"
+Dialogue context: {context}
+
+Score (1-5, higher = less leaking):

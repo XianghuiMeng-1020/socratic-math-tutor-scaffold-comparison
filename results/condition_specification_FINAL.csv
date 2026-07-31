@@ -1,0 +1,10 @@
+field,C1_PE_Llama,C2_SFT_Llama,C3_DPO_Llama,C4_PE_Qwen
+exact_model_version,Llama-3.1-8B-Instruct (unsloth/Meta-Llama-3.1-8B-Instruct),same + LoRA SFT,same + LoRA DPO from SFT,qwen3-max (DashScope)
+local_or_api,local,local,local,API
+adaptation,none,LoRA SFT,LoRA DPO,none
+training_N_verified,0,18726 claimed — verify against train jsonl if available,970 retained pairs (verified count in manuscript/logs),0
+LoRA_DPO_params,n/a,r16 α32 drop0.05 qkvo; lr2e-4; 3ep,beta0.1; lr5e-5; 1ep; init SFT,n/a
+Socratic_prompt,full shared,full shared,full shared,full shared
+generation,T=0; max_tokens1024; max_turns10,same,same,same API decoding
+only_intentional_change,no weight update,SFT adapter,DPO stage,model family + API serving
+deployment_decision,prompt-only local,pay once to adapt,extra preference tuning,pay-per-use frontier API

@@ -1,0 +1,3 @@
+URL: https://github.com/XianghuiMeng-1020/socratic-math-tutor-scaffold-comparison
+Tag target: icce2026-paper206-camera-ready-1.0
+Updated: 2026-07-31T15:46:02.118871+00:00

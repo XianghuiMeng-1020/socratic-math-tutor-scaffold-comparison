@@ -1,0 +1,5 @@
+condition,attempted_metric_rows,exact_duplicate_metric_rows,unique_valid_primary_N,unique_problem_N,excluded_or_collapsed_rows,profile_advanced,profile_progressing,profile_struggling
+C1_PE_Llama,241,142,99,76,142,13,47,39
+C2_SFT_Llama,241,165,76,76,165,6,45,25
+C3_DPO_Llama,241,77,96,76,145,14,53,29
+C4_PE_Qwen,241,52,110,76,131,20,55,35

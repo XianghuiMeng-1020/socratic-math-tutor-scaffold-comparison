@@ -1,0 +1,13 @@
+condition,profile,n,composite_mean,ci95_low,ci95_high
+C1_PE_Llama,advanced,13,0.6292,0.5833,0.6614
+C1_PE_Llama,progressing,47,0.6272,0.613,0.6421
+C1_PE_Llama,struggling,39,0.6114,0.597,0.626
+C2_SFT_Llama,advanced,6,0.6417,0.6081,0.6793
+C2_SFT_Llama,progressing,45,0.6377,0.6271,0.6489
+C2_SFT_Llama,struggling,25,0.6355,0.6215,0.649
+C3_DPO_Llama,advanced,14,0.6026,0.5601,0.6453
+C3_DPO_Llama,progressing,53,0.614,0.5939,0.6337
+C3_DPO_Llama,struggling,29,0.5897,0.5587,0.6204
+C4_PE_Qwen,advanced,20,0.6265,0.5913,0.6589
+C4_PE_Qwen,progressing,55,0.6149,0.5938,0.6351
+C4_PE_Qwen,struggling,35,0.5919,0.5665,0.617
