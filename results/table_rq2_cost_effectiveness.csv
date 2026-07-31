@@ -1,0 +1,37 @@
+condition,profile,quality_composite,training_cost_usd,inference_per_dialogue,note
+C0a_NoScaffold,risk_averse,0.6367,0.0,0.0,
+C0a_NoScaffold,balanced,0.6234,0.0,0.0,
+C0a_NoScaffold,learning_first,0.5859,0.0,0.0,
+C0b_WeakScaffold,risk_averse,0.6367,0.0,0.0,
+C0b_WeakScaffold,balanced,0.6234,0.0,0.0,
+C0b_WeakScaffold,learning_first,0.5859,0.0,0.0,
+C1_FullScaffold,risk_averse,0.6367,0.0,0.0,
+C1_FullScaffold,balanced,0.6234,0.0,0.0,
+C1_FullScaffold,learning_first,0.5859,0.0,0.0,
+C1_PE_Llama,risk_averse,0.6524,0.0,0.0,Base Llama 3.1-8B + prompt; ~$0 marginal inference on owned GPU
+C1_PE_Llama,balanced,0.6215,0.0,0.0,Base Llama 3.1-8B + prompt; ~$0 marginal inference on owned GPU
+C1_PE_Llama,learning_first,0.6272,0.0,0.0,Base Llama 3.1-8B + prompt; ~$0 marginal inference on owned GPU
+C2_SFT_Llama,risk_averse,0.6524,45.0,0.0,SFT LoRA adapter; one-time training cost only
+C2_SFT_Llama,balanced,0.6342,45.0,0.0,SFT LoRA adapter; one-time training cost only
+C2_SFT_Llama,learning_first,0.659,45.0,0.0,SFT LoRA adapter; one-time training cost only
+C3_DPO_Llama,risk_averse,0.6318,55.0,0.0,DPO from SFT checkpoint; one-time training cost
+C3_DPO_Llama,balanced,0.6273,55.0,0.0,DPO from SFT checkpoint; one-time training cost
+C3_DPO_Llama,learning_first,0.6455,55.0,0.0,DPO from SFT checkpoint; one-time training cost
+C4_PE_Qwen,risk_averse,0.6262,0.0,0.045,Qwen3-Max DashScope API; $0.016/1K tokens (2026 pricing)
+C4_PE_Qwen,balanced,0.6257,0.0,0.045,Qwen3-Max DashScope API; $0.016/1K tokens (2026 pricing)
+C4_PE_Qwen,learning_first,0.6411,0.0,0.045,Qwen3-Max DashScope API; $0.016/1K tokens (2026 pricing)
+NC1_no-question,risk_averse,0.3003,0.0,0.0,
+NC1_no-question,balanced,0.3725,0.0,0.0,
+NC1_no-question,learning_first,0.401,0.0,0.0,
+NC2_answer-leak,risk_averse,0.1469,0.0,0.0,
+NC2_answer-leak,balanced,0.2188,0.0,0.0,
+NC2_answer-leak,learning_first,0.2375,0.0,0.0,
+NC3_off-topic,risk_averse,0.4553,0.0,0.0,
+NC3_off-topic,balanced,0.4925,0.0,0.0,
+NC3_off-topic,learning_first,0.4785,0.0,0.0,
+NC4_repetitive,risk_averse,0.6613,0.0,0.0,
+NC4_repetitive,balanced,0.6475,0.0,0.0,
+NC4_repetitive,learning_first,0.685,0.0,0.0,
+NC5_no-scaffold,risk_averse,0.2904,0.0,0.0,
+NC5_no-scaffold,balanced,0.3625,0.0,0.0,
+NC5_no-scaffold,learning_first,0.3908,0.0,0.0,

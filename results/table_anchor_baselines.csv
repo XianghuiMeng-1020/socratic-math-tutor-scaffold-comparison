@@ -1,0 +1,4 @@
+condition,n,composite_mean,composite_std,QQ_mean,SD_mean,SLR_mean,EDT_mean,DC_mean,MC_Verified_mean
+ANCHOR-Expert,30,0.6985,0.0553,0.75,0.7458,1.0,0.2833,0.7188,0.35
+ANCHOR-Direct,30,0.2015,0.0285,0.0,0.1125,0.0,0.4167,0.6646,0.5
+ANCHOR-Random,30,0.5463,0.0426,0.5333,0.2833,0.9133,0.2333,0.6958,0.5

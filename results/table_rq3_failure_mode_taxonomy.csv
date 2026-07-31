@@ -1,0 +1,9 @@
+condition,total,early_term,answer_leak,repetitive,no_question,api_error,scorable,early_term_pct,answer_leak_pct,repetitive_pct,no_question_pct,api_error_pct,scorable_pct
+C0a_NoScaffold,50,0,0,50,0,0,50,0.0,0.0,100.0,0.0,0.0,100.0
+C0b_WeakScaffold,50,0,0,50,0,0,50,0.0,0.0,100.0,0.0,0.0,100.0
+C1_FullScaffold,50,0,0,50,0,0,50,0.0,0.0,100.0,0.0,0.0,100.0
+C1_PE_Llama,241,11,18,56,0,0,230,4.6,7.5,23.2,0.0,0.0,95.4
+C2_SFT_Llama,401,91,5,3,0,0,310,22.7,1.2,0.7,0.0,0.0,77.3
+C3_DPO_Llama,241,3,21,30,30,0,238,1.2,8.7,12.4,12.4,0.0,98.8
+C4_PE_GPT4o,241,2,19,40,40,11,228,0.8,7.9,16.6,16.6,4.6,94.6
+C4_PE_Qwen,241,2,19,40,40,11,228,0.8,7.9,16.6,16.6,4.6,94.6

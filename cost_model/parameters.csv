@@ -1,0 +1,10 @@
+parameter,value,unit,source,date,notes
+C1_training_usd,0.0,USD,rq2_cost_tradeoff.py,2026-02,Prompt-only; no fine-tuning
+C2_training_usd,45.0,USD,rq2_cost_tradeoff.py / local RTX estimate,2026-02,~3 epoch LoRA SFT; paper Table may say $45
+C3_training_usd_code,55.0,USD,rq2_cost_tradeoff.py,2026-02,CODE uses $55 (=45 SFT + ~10 DPO). Manuscript may report $100 — MISMATCH
+C3_training_usd_manuscript_claim,100.0,USD,manuscript Table 5 claim,camera-ready audit,Not matching code constant; Amy must choose one and document
+C4_inference_per_dialogue_usd,0.045,USD/dialogue,rq2_cost_tradeoff.py,2026-02,Assumes ~2.8k tokens/dialogue × Qwen3-Max ~$0.016/1k (DashScope). VERIFY with actual token logs if available.
+local_inference_marginal_usd,0.0,USD/dialogue,simplified cost model,2026-02,"EXCLUDES hardware depreciation, electricity, hosting, maintenance, labour, simulator, evaluator"
+break_even_C2_vs_API,1000.0,dialogues,45/0.045,audit,fixed training / per-dialogue API saving
+break_even_C3_vs_API_if_100,2222.0,dialogues,100/0.045,audit,Only if C3 training=$100; if code $55 then BE=1222
+break_even_C3_vs_API_if_55,1222.0,dialogues,55/0.045,audit,Consistent with code constant

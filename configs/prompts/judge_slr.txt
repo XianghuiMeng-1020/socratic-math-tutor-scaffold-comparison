@@ -1,0 +1,12 @@
+Rate the Student Learning Response (SLR) quality on scale 1-5.
+
+1 = No engagement or off-topic
+2 = Minimal engagement
+3 = Partial engagement
+4 = Good engagement
+5 = Strong engagement with correct reasoning
+
+Student response: "{response}"
+Tutor context: {context}
+
+Score (1-5):

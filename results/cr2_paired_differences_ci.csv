@@ -1,0 +1,5 @@
+contrast,n_problems,paired_mean_diff,ci95_low,ci95_high,bootstrap_unit,n_boot,seed
+Full_main_minus_No,37,0.0226,0.007,0.0409,problem_id,2000,20260731
+Full_main_minus_Weak,37,0.0889,0.0661,0.1121,problem_id,2000,20260731
+Weak_minus_No,37,-0.0663,-0.0907,-0.0381,problem_id,2000,20260731
+Full_ablation_minus_No,37,-0.061,-0.0807,-0.0407,problem_id,2000,20260731

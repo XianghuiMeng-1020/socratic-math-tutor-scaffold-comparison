@@ -1,0 +1,46 @@
+# Hard gates - must all pass before STUDY_EXECUTION_READY
+# STUDY LOCK
+
+gates:
+  G1_data_role_mapping:
+    description: "Data role mapping complete"
+    check: "table_dataset_inventory.csv and table_schema_mapping.csv exist"
+  G2_isolation_proof:
+    description: "Isolation proof complete (zero leakage)"
+    check: "table_data_isolation_audit.csv shows zero collisions"
+  G3_all_conditions_generated:
+    description: "All 4 conditions generated"
+    check: "~2000 dialogues (500*4 conditions) in outputs/dialogues"
+  G4_simulator_frozen:
+    description: "Shared simulator frozen and reused"
+    check: "Simulator checkpoint exists and used for all generations"
+  G5_six_metrics_computed:
+    description: "Six metrics computed with traceability"
+    check: "table_metric_raw_scores.csv and table_metric_aggregated_scores.csv"
+  G6_confirmatory_contrasts:
+    description: "Confirmatory contrasts + Holm outputs present"
+    check: "table_rq1_confirmatory_contrasts.csv"
+  G7_cost_tradeoff:
+    description: "Cost tradeoff + break-even outputs present"
+    check: "table_rq2_cost_effectiveness.csv, table_rq2_break_even_analysis.csv"
+  G8_degradation_failure:
+    description: "Degradation + failure taxonomy present"
+    check: "table_rq3_turn_degradation_mixed_effects.csv, table_rq3_failure_mode_taxonomy.csv"
+  G9_reliability:
+    description: "Reliability + anchor + negative controls pass or flagged"
+    check: "table_rq4_metric_reliability.csv, table_anchor_baseline_results.csv"
+  G10_simulator_validity:
+    description: "Simulator validity table present"
+    check: "table_rq5_simulator_alignment.csv"
+  G11_reporting_matrix:
+    description: "Reporting coverage matrix complete"
+    check: "table_metric_coverage_matrix.csv, table_not_reported_with_reasons.csv"
+  G12_repro_manifests:
+    description: "Repro manifests complete"
+    check: "repro_manifest.json, data_hash_manifest.json"
+  G13_all_tables_md:
+    description: "ALL_TABLES.md complete"
+    check: "paper/ALL_TABLES.md exists"
+  G14_no_conflicts:
+    description: "No unresolved consistency conflicts"
+    check: "final_consistency_lock_report.txt"

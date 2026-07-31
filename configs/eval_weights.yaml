@@ -1,0 +1,21 @@
+# Composite score weights for 6 metrics
+# STUDY LOCK - weights match paper Section 3.5
+# Primary composite: QQ 20%, SD 20%, inverted SLR 25%, EDT 15%, DC 10%, MC_Verified 10%
+
+metrics:
+  QQ: 0.20           # Question Quality
+  SD: 0.20           # Scaffolding Depth
+  SLR: 0.25          # Solution Leaking Rate (inverted; highest weight - safety-critical)
+  EDT: 0.15          # Error Diagnosis Targeting
+  DC: 0.10           # Dialogue Coherence
+  MC_Verified: 0.10  # Mathematical Correctness (symbolic; primary)
+
+# MC-Judged only enters composite if inter-judge agreement r >= 0.7
+mc_judged_gate: 0.7
+
+# Normalization: all 1-5 scale metrics normalized to 0-1 before weighting
+scale_1_5_to_0_1: true
+
+# SLR scale: 5 = no leaking (best), 1 = heavy leaking (worst), consistent with other metrics.
+# compute_slr returns 5=good, so NO inversion needed; high normalized SLR → good composite score.
+slr_invert: false

@@ -1,0 +1,3 @@
+checkpoint: outputs/checkpoints/simulator
+role: student_simulator
+profiles: [struggling, progressing, advanced]

@@ -1,0 +1,12 @@
+Rate the pedagogical quality of this tutor question (QQ) on a scale 1-5.
+
+1 = Not helpful (off-topic, too direct, gives answer)
+2 = Weak (vague, doesn't scaffold)
+3 = Adequate (somewhat Socratic)
+4 = Good (clear scaffolding, prompts reasoning)
+5 = Excellent (strong Socratic, perfect heuristic)
+
+Tutor question: "{question}"
+Context: {context}
+
+Score (1-5):

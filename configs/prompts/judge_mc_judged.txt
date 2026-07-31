@@ -1,0 +1,9 @@
+For this geometry/conceptual math item, verify whether the student's final answer is mathematically correct.
+
+Problem: {problem}
+Reference solution: {reference}
+Student's final answer: {student_answer}
+
+Is the student's answer correct? (yes/no)
+
+Reasoning:

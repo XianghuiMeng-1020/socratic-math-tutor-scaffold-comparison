@@ -1,0 +1,3 @@
+dimensions: [QQ, SD, SLR, EDT, DC, MC_Verified]
+judge_prompts_dir: prompts/evaluator_prompts/
+rubric: rubrics/six_dimension_rubric.md

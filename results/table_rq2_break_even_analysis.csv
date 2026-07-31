@@ -1,0 +1,6 @@
+comparison,delta_training_cost_usd,delta_composite,break_even_volume,note
+C2_SFT_Llama vs C1_PE_Llama,45.0,0.0128,3530.0,Llama-only (same ~$0 inference cost)
+C3_DPO_Llama vs C2_SFT_Llama,10.0,-0.0069,,Training cost not justified by quality gain
+C4_PE_Qwen vs C1_PE_Llama,-0.0,0.0042,,C1 zero training; Qwen API always more expensive
+C4_PE_Qwen vs C2_SFT_Llama,-45.0,-0.0085,1000.0,Qwen API cost surpasses C2_SFT_Llama training cost at >1000 dialogues
+C4_PE_Qwen vs C3_DPO_Llama,-55.0,-0.0016,1223.0,Qwen API cost surpasses C3_DPO_Llama training cost at >1223 dialogues

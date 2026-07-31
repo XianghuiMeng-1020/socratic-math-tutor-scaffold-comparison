@@ -1,0 +1,28 @@
+# Data split and isolation policy - STUDY LOCK
+
+test_set:
+  size: 500
+  source: mathtutorbench  # mathdial_bridge sampled
+  seed: 42
+  disjoint_from: [sft, dpo, simulator]
+
+sft:
+  source: socrateach
+  valid_holdout: 0.10
+  exclude_problem_ids: []  # populated from test set
+
+dpo:
+  pair_target: 8000
+  sources: [mathdial, socrateach]
+  exclude_problem_ids: []  # populated from test set
+
+simulator:
+  source: mathdial
+  use_split: train  # NOT test - test 500 held out
+  exclude_problem_ids: []  # populated from test set
+  learner_profiles:
+    struggling: 0.33
+    progressing: 0.50
+    advanced: 0.17
+
+# Isolation proof: no overlap between test_500 ids and sft/dpo/simulator problem ids

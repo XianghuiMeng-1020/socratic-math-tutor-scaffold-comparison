@@ -1,0 +1,28 @@
+# Portable path configuration
+# Override with env PROJECT_ROOT pointing at this repository root.
+
+project_root: "."
+data_root: "${project_root}/data"
+
+datasets:
+  socrateach: "${data_root}/SocraticLM-main/SocraticLM-main/data"
+  mathdial: "${data_root}/mathdial-main/mathdial-main/data"
+  mathtutorbench: "${data_root}/mathtutorbench-main/mathtutorbench-main"
+  math: "${data_root}/math-main/math-main"
+
+outputs:
+  logs: "${project_root}/outputs/logs"
+  manifests: "${project_root}/outputs/manifests"
+  checkpoints: "${project_root}/outputs/checkpoints"
+  dialogues: "${project_root}/outputs/dialogues"
+  eval: "${project_root}/outputs/eval"
+  analysis: "${project_root}/outputs/analysis"
+  tables: "${project_root}/outputs/tables"
+
+splits:
+  sft_train: "${project_root}/outputs/splits/sft_train.jsonl"
+  sft_valid: "${project_root}/outputs/splits/sft_valid.jsonl"
+  dpo_pairs: "${project_root}/outputs/splits/dpo_pairs.jsonl"
+  simulator_train: "${project_root}/outputs/splits/simulator_train.jsonl"
+  test_500: "${project_root}/outputs/splits/test_500.jsonl"
+  test_ids: "${project_root}/outputs/splits/test_500_ids.json"

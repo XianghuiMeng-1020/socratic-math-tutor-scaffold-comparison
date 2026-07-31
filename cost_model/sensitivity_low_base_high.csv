@@ -1,0 +1,5 @@
+scenario,C2_train,C3_train,C4_api_per_dialogue,local_inf_per_dialogue,BE_C2_vs_API,BE_C3_vs_API,excluded_costs
+low,30,40,0.03,0.0,1000,1334,hardware acquisition/depreciation; electricity; hosting; maintenance; engineering labour; simulator/evaluator inference
+base_code,45,55,0.045,0.0,1000,1223,hardware acquisition/depreciation; electricity; hosting; maintenance; engineering labour; simulator/evaluator inference
+base_manuscript,45,100,0.045,0.0,1000,2223,hardware acquisition/depreciation; electricity; hosting; maintenance; engineering labour; simulator/evaluator inference
+high,80,150,0.08,0.005,1067,2000,hardware acquisition/depreciation; electricity; hosting; maintenance; engineering labour; simulator/evaluator inference

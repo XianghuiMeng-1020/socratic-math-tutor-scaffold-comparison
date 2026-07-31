@@ -1,0 +1,4 @@
+max_turns: 10
+temperature: 0.0
+seed_policy: fixed_per_problem_profile_turn
+load_in_4bit: true

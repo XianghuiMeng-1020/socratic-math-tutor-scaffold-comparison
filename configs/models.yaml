@@ -1,0 +1,55 @@
+# Model configuration - STUDY LOCK
+# C1 PE-Llama, C2 SFT-Llama, C3 DPO-Llama, C4 PE-Qwen (Qwen3-Max via DashScope)
+# NOTE: C4 was originally planned as PE-GPT4o; switched to Qwen3-Max due to API access.
+
+# Llama 3.1-8B-Instruct via unsloth mirror (ungated, same weights, no HF token needed)
+base_model: "unsloth/Meta-Llama-3.1-8B-Instruct"
+# Official gated repo (requires HF token): "meta-llama/Llama-3.1-8B-Instruct"
+
+sft:
+  rank: 16
+  alpha: 32
+  lr: 2.0e-4
+  lr_scheduler: "cosine"
+  epochs: 3
+  max_steps: -1            # -1 = use num_train_epochs (full training)
+  batch_size: 1
+  grad_accum: 32
+  early_stop_patience: 3
+  early_stop_metric: "eval_loss"
+  valid_holdout_pct: 0.10
+
+dpo:
+  beta: 0.1
+  lr: 5.0e-5
+  epochs: 1
+  batch_size: 1
+  init_from_sft: true
+  pair_target: 8000
+  pair_sources:
+    model_ranked: 0.60
+    deliberate_degradation: 0.25
+    rule_based_negatives: 0.15
+
+pe_qwen:                         # formerly pe_gpt4o; uses Qwen3-Max via DashScope
+  model: "qwen3-max"
+  api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  api_key_env: "QWEN_API_KEY"
+  max_tokens: 1024
+  temperature: 0.0
+
+pe_llama:
+  max_tokens: 1024
+  temperature: 0.0
+
+generation:
+  max_turns: 10
+  temperature: 0.0
+  seed_policy: "fixed_per_problem_profile_turn"
+  load_in_4bit: true          # BitsAndBytes 4-bit quant for 16GB VRAM
+  api_max_retries: 5          # exponential backoff retries for GPT-4o
+  api_retry_base_delay: 2.0   # seconds between retries
+
+# API keys: set via env vars
+# QWEN_API_KEY  - primary API for C4 inference + evaluation judge
+# OPENAI_API_KEY - optional, for 3-judge ensemble (if available)

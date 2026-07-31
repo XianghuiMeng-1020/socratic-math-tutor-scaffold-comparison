@@ -1,0 +1,13 @@
+Rate the Error-Directed Targeting (EDT) of this tutor turn on scale 1-5.
+
+1 = Ignores error or wrong target
+2 = Weak targeting
+3 = Adequate targeting
+4 = Good targeting
+5 = Precise targeting of error without giving answer
+
+Tutor response: "{response}"
+Student error: {error}
+Context: {context}
+
+Score (1-5):

@@ -1,0 +1,8 @@
+condition: C2_SFT_Llama
+base_model: unsloth/Meta-Llama-3.1-8B-Instruct
+adaptation: lora_sft
+lora: {r: 16, alpha: 32, dropout: 0.05}
+prompt: full_socratic
+temperature: 0.0
+max_tokens: 1024
+max_turns: 10

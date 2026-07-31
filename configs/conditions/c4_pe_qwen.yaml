@@ -1,0 +1,8 @@
+condition: C4_PE_Qwen
+model: qwen3-max
+api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
+adaptation: none
+prompt: full_socratic
+temperature: 0.0
+max_tokens: 1024
+max_turns: 10

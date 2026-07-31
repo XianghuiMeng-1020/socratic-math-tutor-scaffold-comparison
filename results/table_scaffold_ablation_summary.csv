@@ -1,0 +1,6 @@
+,QQ,QQ,SD,SD,SLR,SLR,EDT,EDT,DC,DC,MC_Verified,MC_Verified,composite,composite
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+condition,,,,,,,,,,,,,,
+C0a_NoScaffold,0.035,0.085,0.99,0.071,0.8,0.179,0.485,0.06,0.688,0.05,0.5,0.0,0.599,0.049
+C0b_WeakScaffold,0.5,0.258,1.0,0.0,0.098,0.108,0.51,0.071,0.73,0.016,0.5,0.0,0.524,0.051
+C1_FullScaffold,0.676,0.15,1.0,0.0,0.005,0.025,0.52,0.069,0.727,0.019,0.5,0.0,0.538,0.035

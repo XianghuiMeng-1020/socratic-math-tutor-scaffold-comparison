@@ -1,0 +1,13 @@
+Rate the Dialogue Coherence (DC) of this turn on scale 1-5.
+
+1 = Incoherent or off-topic
+2 = Weak coherence
+3 = Adequate
+4 = Good flow
+5 = Excellent coherence and logical progression
+
+Tutor turn: "{turn}"
+Previous turn: {prev_turn}
+Context: {context}
+
+Score (1-5):

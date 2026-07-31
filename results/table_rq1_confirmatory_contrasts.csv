@@ -1,0 +1,4 @@
+contrast,mean_a,mean_b,d,p,ci_lower,ci_upper,delta_pp,abs_gain_pct,pass_holm,pass_d,pass_gain,confirmatory_claim,holm_adjusted
+C1_PE_Llama vs C4_PE_Qwen,0.621475,0.625709,-0.0706,0.4438,-0.015073,0.006541,0.42,-0.677,False,False,False,False,False
+C1_PE_Llama vs C2_SFT_Llama,0.621475,0.634225,-0.2801,0.002709,-0.020793,-0.004803,1.28,-2.01,True,True,False,False,True
+C2_SFT_Llama vs C3_DPO_Llama,0.634225,0.627318,0.1329,0.146368,-0.002254,0.016343,0.69,1.101,False,False,False,False,False

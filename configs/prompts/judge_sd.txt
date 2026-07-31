@@ -1,0 +1,12 @@
+Rate the Scaffolding Depth (SD) of this tutor turn on a scale 1-5.
+
+1 = No scaffolding (direct answer or irrelevant)
+2 = Superficial scaffolding
+3 = Some scaffolding
+4 = Good stepwise scaffolding
+5 = Excellent graduated scaffolding toward student independence
+
+Tutor turn: "{question}"
+Context: {context}
+
+Score (1-5):
