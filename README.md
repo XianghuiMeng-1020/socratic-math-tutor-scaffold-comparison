@@ -11,6 +11,8 @@
 
 *ICCE 2026 · Submission 206 · Camera-ready reproduction package*
 
+[Design](#design-at-a-glance) · [Layout](#repository-layout) · [Quick start](#quick-start) · [Pipeline](#reproducing-the-pipeline) · [Config locks](#key-configuration-locks) · [Metrics](#evaluation-dimensions) · [Data](#data-provenance-not-redistributed) · [Citation](#citation)
+
 </div>
 
 <br/>
